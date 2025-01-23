@@ -5,6 +5,12 @@ We created this project to help you try RubyMine features.
 To get started with the app, follow the [step-by-step tutorial](https://www.jetbrains.com/help/ruby/get-started.html) 
 or check out our [YouTube channel](https://www.youtube.com/playlist?list=PLQ176FUIyIUanO72dRf6lOefKIznviKKJ).
 
+**Other versions:**
+
+Rails sample project with [Ruby 3.3.0 and Rails 8.0.0](https://github.com/JetBrains/sample_rails_app_8th_ed) 
+
+Rails sample project with [Ruby 3.3.6 and Rails 7.0.4](https://github.com/JetBrains/sample_rails_app_7th_ed)
+
 ## Getting started
 
 To get started with the app, first clone the repo and `cd` into the directory:
