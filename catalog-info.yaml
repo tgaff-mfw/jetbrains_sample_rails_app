@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: jetbrains_sample_rails_app
+  annotations:
+    github.com/project-slug: tgaff-mfw/jetbrains_sample_rails_app
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
