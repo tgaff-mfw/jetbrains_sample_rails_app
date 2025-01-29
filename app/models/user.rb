@@ -38,6 +38,12 @@ class User < ApplicationRecord
   end
 
   # Returns true if the given token matches the digest.
+  #
+  # @param [String] attribute The attribute to check (e.g. :email or :password).
+  # @param [String] token The token to authenticate against the digest.
+  #
+  # @return [Boolean] Whether the given token matches the digest for the specified
+  #   attribute.
   def authenticated?(attribute, token)
     digest = send("#{attribute}_digest")
     return false if digest.nil?
@@ -85,16 +91,19 @@ class User < ApplicationRecord
   end
 
   # Follows a user.
+  # @param [User] other_user The user to follow.
   def follow(other_user)
     following << other_user
   end
 
   # Unfollows a user.
+  # @param [User] other_user The user to unfollow.
   def unfollow(other_user)
     following.delete(other_user)
   end
 
   # Returns true if the current user is following the other user.
+  # @param [User] other_user
   def following?(other_user)
     following.include?(other_user)
   end
