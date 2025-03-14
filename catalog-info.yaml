@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: tgaff-mfw/jetbrains_sample_rails_app
     # backstage.io/techdocs-ref: dir:.
-    backstage.io/techdocs-ref: url:https://github.com/tgaff-mfw/docs_test
+    backstage.io/techdocs-ref: url:https://github.com/tgaff-mfw/docs_test/tree/main
 
 spec:
   type: other
